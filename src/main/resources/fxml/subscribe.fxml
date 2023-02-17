@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ma.enset.room_chat_app.controller.SubscribeController"
+>
+   <children>
+      <Text layoutX="139.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please enter your name" wrappingWidth="224.53679656982422" AnchorPane.leftAnchor="139.0" AnchorPane.rightAnchor="139.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <TextField fx:id="userName_txt" layoutX="116.0" layoutY="277.0" prefHeight="44.0" prefWidth="270.0" AnchorPane.bottomAnchor="429.0" AnchorPane.leftAnchor="116.0" />
+      <Text layoutX="98.0" layoutY="732.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Version 0.3.1 - Last updated 2023-02-11 14:04:17 " wrappingWidth="304.01953125" />
+      <FontAwesomeIconView glyphName="USER_CIRCLE_ALT" layoutX="209.0" layoutY="195.0" size="85" />
+      <FontAwesomeIconView fx:id="subscribe_btn" glyphName="ARROW_CIRCLE_ALT_RIGHT" layoutX="396.0" layoutY="313.0" size="40" />
+   </children>
+</AnchorPane>

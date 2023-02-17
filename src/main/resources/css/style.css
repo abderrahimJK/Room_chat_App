@@ -1,0 +1,28 @@
+.root{
+    -fx-background-color: #fff;
+}
+
+.scroll-pane{
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+}
+.msg-container{
+    -fx-background-image:  url('../images/bg-img.jpeg');
+    -fx-border-style: none;
+    -fx-border-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, auto;
+}
+
+#send_btn{
+    -fx-cursor: hand;
+}
+
+#send_btn:hover{
+    -fx-cell-size: 45;
+}
+
+.scroll-pane .scroll-bar {
+    -fx-background-color: transparent;
+}
+

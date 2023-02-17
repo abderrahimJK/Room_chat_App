@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="500.0" styleClass="root" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ma.enset.room_chat_app.controller.ChatController">
+    <children>
+        <VBox layoutX="14.0" layoutY="14.0" prefHeight="724.0" prefWidth="477.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+            <children>
+                <HBox fx:id="subscribe_field" alignment="CENTER" prefHeight="56.0" prefWidth="480.0" spacing="20.0">
+                    <children>
+                        <TextField fx:id="userName_txt" prefHeight="56.0" prefWidth="428.0" promptText="Please enter your name">
+                            <font>
+                                <Font size="19.0" />
+                            </font>
+                        </TextField>
+                        <FontAwesomeIconView fx:id="subscribe_btn" glyphName="ARROW_CIRCLE_ALT_RIGHT" size="40" />
+                    </children>
+               <padding>
+                  <Insets bottom="8.0" />
+               </padding>
+                </HBox>
+            <ScrollPane fx:id="scroll_pane" prefHeight="646.0" prefWidth="480.0">
+               <content>
+                  <VBox fx:id="vBox" alignment="TOP_CENTER" prefHeight="627.0" prefWidth="475.0" spacing="20.0" styleClass="msg-container" stylesheets="@../css/style.css">
+                     <padding>
+                        <Insets bottom="15.0" left="8.0" right="8.0" top="15.0" />
+                     </padding></VBox>
+               </content>
+            </ScrollPane>
+                <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="480.0" spacing="15.0">
+                    <children>
+                        <TextField fx:id="chat_txt" prefHeight="42.0" prefWidth="423.0" promptText="Type a message" />
+                        <FontAwesomeIconView fx:id="send_btn" glyphName="CHEVRON_CIRCLE_RIGHT" size="42" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
